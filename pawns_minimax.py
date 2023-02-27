@@ -4,7 +4,8 @@ chess game. Algorithm uses a rudimentary self-designed heuristic algorithm, whic
 1. Each white pawn at the final rank returns +10
 2. Each white pawn that can capture a black pawn returns +2
 3. Each step away from the initial square returns +(steps away from start)/N, where N is the length of a side
-4. Each black pawn follows the same scoring scheme as a white pawn, except with signs inverted
+4. Each white pawn with an empty file ahead of it returns +4
+5. Each black pawn follows the same scoring scheme as a white pawn, except with signs inverted
 Algorithm is non ideal since the depth of the game tree search is not necessarily equal to the depth of terminal states.
 Hence, the game is unsolved, and the AI is fallible.
 Alpha-Beta pruning not applied, since a terminal state is not always reached, and unexplored branches could yield better
