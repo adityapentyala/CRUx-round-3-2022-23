@@ -16,6 +16,8 @@ Contains source code for tasks completed as part of CRUX dev inductions for 2022
    
 
 **SCREENSHOTS OF TASK 1 OUTPUT**
+
+TESTCASE 1: N = 7, DEPTH = 5, user = WHITE
 <img width="821" alt="image" src="https://user-images.githubusercontent.com/62715046/221759412-0845dfa6-d1b3-47cc-b980-8d50346de233.png">
 
 <img width="457" alt="image" src="https://user-images.githubusercontent.com/62715046/221759483-10415abc-b8b9-414a-b635-81d7adce5d2b.png">
@@ -63,3 +65,30 @@ Contains source code for tasks completed as part of CRUX dev inductions for 2022
 <img width="384" alt="image" src="https://user-images.githubusercontent.com/62715046/221760428-0601bc9c-db40-4f3c-94d7-c7aa5bf60936.png">
 
 <img width="297" alt="image" src="https://user-images.githubusercontent.com/62715046/221760456-e6e4d542-63ff-49bb-bf64-bd293c8d646f.png">
+
+
+TESTCASE 2: N = 5, DEPTH = 7, user = BLACK
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/62715046/221774031-286afb73-e692-4ade-baae-1ff7b1915ffa.png">
+
+<img width="268" alt="image" src="https://user-images.githubusercontent.com/62715046/221774079-2d32088a-4792-4f99-b490-2efe63534df0.png">
+
+<img width="380" alt="image" src="https://user-images.githubusercontent.com/62715046/221774111-27b9e2ef-eb1d-445d-95b6-24fb8987abfa.png">
+
+<img width="396" alt="image" src="https://user-images.githubusercontent.com/62715046/221774156-71253313-8209-4fb7-9106-7dccc270e2bd.png">
+
+<img width="402" alt="image" src="https://user-images.githubusercontent.com/62715046/221774202-f4bfc799-7a9a-4b1b-8973-7f5c06a45962.png">
+
+<img width="385" alt="image" src="https://user-images.githubusercontent.com/62715046/221774241-e594a73a-dad6-4643-92fe-443a01006f34.png">
+
+<img width="394" alt="image" src="https://user-images.githubusercontent.com/62715046/221774274-1dd8fc47-1c71-4336-a4a7-272b71edde33.png">
+
+<img width="391" alt="image" src="https://user-images.githubusercontent.com/62715046/221774346-b2e077b6-220e-42d4-b79b-38a7ce278c79.png">
+
+<img width="376" alt="image" src="https://user-images.githubusercontent.com/62715046/221774404-65b89cf0-d89e-4c42-ab58-407ba54cb922.png">
+
+<img width="389" alt="image" src="https://user-images.githubusercontent.com/62715046/221774450-8dbe2553-8018-442e-a9c0-3d0efa834e4a.png">
+
+<img width="376" alt="image" src="https://user-images.githubusercontent.com/62715046/221774503-e2aa1849-7606-4199-895f-e79d1ee8e94d.png">
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/62715046/221774555-35388ac1-57ce-4b55-a7e6-6e76a0570a44.png">
+
