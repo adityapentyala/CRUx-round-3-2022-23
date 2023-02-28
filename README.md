@@ -2,12 +2,18 @@
 Contains source code for tasks completed as part of CRUX dev inductions for 2022 batch.
 
 **TASK 1 PROBLEM STATEMENT**
+
 _1. The game consists of an NxN chessboard and N pawns for each player. White starts, as always. (N variable)
+
 _2. Pawns can either capture another pawn of the opponents with a single square diagonal movement or advance 1 square        (basic chess rules of a pawn). No En Passant or initial 2 square advances allowed. 
+
 _3. The terminal state is when the player whose turn it has no allowed movements (all current pawns are blocked by      another pawn, can’t capture, or reached the other end). The winner is decided by who has more pawns at the opponent's   end. If both have the same number, it’s a draw.
+
 _4. Implement the ‘AI’ of the game using the Minimax algorithm, and improve its performance in some explainable way using    any additional techniques of your choice.
+
 _5. Brownie points:  
    Make the max depth of the tree variable up to the user who is playing the game as a variation of difficulty.
+   
 
 **SCREENSHOTS OF TASK 1 OUTPUT**
 <img width="821" alt="image" src="https://user-images.githubusercontent.com/62715046/221759412-0845dfa6-d1b3-47cc-b980-8d50346de233.png">
