@@ -1,4 +1,5 @@
 **TASK 1 PROBLEM STATEMENT**
+
 Building on the minimax project 
 
 1. The game consists of an NxN chessboard and N pawns for each player. White starts, as always. (N variable)
