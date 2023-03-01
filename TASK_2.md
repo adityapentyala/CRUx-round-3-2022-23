@@ -12,4 +12,5 @@ Dataset: CIFAR-10
 Tiny VGG architecture implemented using tensorflow. Architecture of network is as follows:
 <img width="432" alt="image" src="https://user-images.githubusercontent.com/62715046/222136890-f04191cd-302d-4991-81aa-bd34790034cb.png">
 
+"Tiny" refers to the scaled down size of a stereotypical VGG architecture. Where VGG architectures usually involve 10+ weight layers, the above architecture uses 4.
 
