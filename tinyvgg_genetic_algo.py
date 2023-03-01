@@ -1,7 +1,7 @@
 """
 Written as part of CRUx inductions round 3. Objective is to implement a Tiny VGG architecture using tensorflow, trained
 using a genetic algorithm. Architecture of network is as given in the task file. Model is evaluated against the CIFAR-10
-database
+dataset
 """
 import tensorflow as tf
 import numpy as np
