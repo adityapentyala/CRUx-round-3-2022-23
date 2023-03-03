@@ -13,7 +13,7 @@ Dataset: CIFAR-10
   c. The task entails you tuning the hyperparameters of your layers, not the number of layers and the architecture. Tuning these as well will be treated as a bonus.
  
  ----------------------------------------------------------------------------------------------------------------
- _NOTE: Included copy of console output of test run 2 to visualize best network architectures and hyperparameters used._
+ _NOTE: Included PDF copy of console output of test run 2 to visualize best network architectures and hyperparameters used._
  
  Each generation of the algorithm consists of 12 individuals, of which 6 are selected as elites to populate the next
  generation. Final results of each test run compared with baseline model. All accuracies shown of test runs refer to
