@@ -57,7 +57,7 @@ Time Taken: over 4 hours, 30 minutes
 
 <img width="428" alt="Screenshot 2023-03-02 163821" src="https://user-images.githubusercontent.com/62715046/222778539-c8fa7db2-b014-487d-9a09-4fd06de64328.png">
 
-![Figure_1](https://user-images.githubusercontent.com/62715046/222784494-abc5f926-1be9-4953-91f8-d1a2ec6062aa.png)
+![Figure_1](https://user-images.githubusercontent.com/62715046/222785248-c125b26b-2bd3-44d4-905a-d5f73f32fe71.png)
 
 
 TEST RUN 2: (Original + 10 generations)
