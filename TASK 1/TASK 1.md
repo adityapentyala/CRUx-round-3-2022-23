@@ -13,6 +13,8 @@ Building on the minimax project
 5. Brownie points:  
    Make the max depth of the tree variable up to the user who is playing the game as a variation of difficulty.
    
+-----------------------------------------------------------------------------------------------------------------------   
+   
 
 **SCREENSHOTS OF TASK 1 OUTPUT**
 
