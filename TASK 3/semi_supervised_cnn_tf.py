@@ -1,5 +1,12 @@
 """
-
+Written as Task 3 of crux round 3 inductions. Objective is to implement a semi-supervised model that uses self-training
+to make predictions on a cifar100 dataset with 33% labelled data. The program completes tasks over 3 parts:
+1. Tunes select hyperparameters of the model using keras-tuner
+2. Creates a callback that stops training over epochs if validation accuracy drops or changes by less than 0.1%
+3. Creates a model using the best hyperparameters obtained in step 1 and trains it over a pre-defined number of cycles;
+    each of which involves training the model on a labelled training set over 5 epochs, after which it assigns
+    psuedolabels to an unlabelled set and appends these datapoints, if confident, to the training dataset.
+In the end, a graph is plotted showing the training and validation accuracies over cycles/total epochs 
 """
 import copy
 
