@@ -5,7 +5,7 @@ to make predictions on a cifar100 dataset with 33% labelled data. The program co
 2. Creates a callback that stops training over epochs if validation accuracy drops or changes by less than 0.1%
 3. Creates a model using the best hyperparameters obtained in step 1 and trains it over a pre-defined number of cycles;
     each of which involves training the model on a labelled training set over 5 epochs, after which it assigns
-    psuedolabels to an unlabelled set and appends these datapoints, if confident, to the training dataset.
+    pseudolabels to an unlabelled set and appends these datapoints, if confident, to the training dataset.
 In the end, a graph is plotted showing the training and validation accuracies over cycles/total epochs 
 """
 import copy
@@ -88,7 +88,7 @@ model.summary()'''
 
 # model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
-# setting the original threshold for making confident psuedolabels
+# setting the original threshold for making confident pseudolabels
 threshold = 0.5
 
 # creating the callback to stop training once del(validation accuracy) drops below 0.1%
@@ -108,7 +108,7 @@ callbacks = StopTraining()
 
 
 #function that returns the list of datapoints and labels to be added to the training set, along with the new unlabelled set
-def psuedolabel_new_data(x, threshold):
+def pseudolabel_new_data(x, threshold):
     new_x, new_y = [], []
     deleted_x = []
     indices = []
@@ -137,7 +137,7 @@ hist = model.fit(X_train_labelled, y_train_labelled, epochs=5, batch_size=64, va
                  callbacks=[callbacks])
 train_accuracy.extend(hist.history['acc'])
 test_accuracy.extend(hist.history['val_acc'])
-new_x, new_y, new_X_train_unlabelled = psuedolabel_new_data(X_train_unlabelled, threshold)
+new_x, new_y, new_X_train_unlabelled = pseudolabel_new_data(X_train_unlabelled, threshold)
 new_x = np.array(new_x)
 new_y = np.array(new_y)
 new_X_train_unlabelled = np.array(new_X_train_unlabelled)
@@ -151,7 +151,7 @@ while len(new_x) > 0 and iters > 0:
                      callbacks=[callbacks])
     train_accuracy.extend(hist.history['acc'])
     test_accuracy.extend(hist.history['val_acc'])
-    new_x, new_y, new_X_train_unlabelled = psuedolabel_new_data(X_train_unlabelled, threshold)
+    new_x, new_y, new_X_train_unlabelled = pseudolabel_new_data(X_train_unlabelled, threshold)
     new_x = np.array(new_x)
     new_y = np.array(new_y)
     new_X_train_unlabelled = np.array(new_X_train_unlabelled)
