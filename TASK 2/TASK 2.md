@@ -20,7 +20,7 @@ Dataset: CIFAR-10
  testing accuracies.
  
  HYPERPARAMETERS TUNED:
- 1. Number of convulutional layers: {1,2}
+ 1. Number of convolutional layers: {1,2}
  
  		Hyperparameters tuned for each convolutional layer:
 		
