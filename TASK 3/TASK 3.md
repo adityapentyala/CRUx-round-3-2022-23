@@ -21,7 +21,7 @@ First, the hyperparameters of the model are tuned by keras.tuner, in a bid to ma
 
 Then, a predetermined number of iterations for the training cycle are set. The model is trained on the training set for 5 epochs. It then assigns as many confident psuedolabels as it can on an unlabelled training set. If the number of new psuedolabeled datapoints is non-zero, the cycle is repeated unless the number of predetermined iterations of the cycle have been reached. At any point during the epoch training, if the validation accuracy drops, or the positive difference between successive validation accuracies is less than 0.1%, the epoch training is stopped and the cycle skips to the psuedolabelling step.
 
-As an additional countermeasure against the common drawback of self learning, that is, the tendency of a self-learning model to amplify its own mistakes during psuedolabelling leading to a sizeable bias, the confidence threshold is incremented by a constant fraction as set by the user, upto a maximum of 0.9 or 90%.
+As an additional countermeasure against the common drawback of self learning, that is, the tendency of a self-learning model to amplify its own mistakes during psuedolabelling leading to a sizeable bias, the confidence threshold is incremented by a constant fraction as set by the user, upto a maximum of 0.85 or 85%.
 
 -----------------------------------------------------------------------------------------------------------------------
 
