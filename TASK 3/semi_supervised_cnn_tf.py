@@ -69,7 +69,7 @@ def build_model(hp):
                   metrics=['acc'])
     return model
 
-
+# using keras_tuner to tune hyperparameters, metric to maximise chosen as training accuracy
 tuner = keras_tuner.RandomSearch(
     hypermodel=build_model,
     objective="acc",
@@ -87,9 +87,11 @@ model.summary()
 model.summary()'''
 
 # model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# setting the original threshold for making confident psuedolabels
 threshold = 0.5
 
-
+# creating the callback to stop training once del(validation accuracy) drops below 0.1%
 class StopTraining(tf.keras.callbacks.Callback):
     def __init__(self):
         super(tf.keras.callbacks.Callback, self).__init__()
@@ -105,6 +107,7 @@ class StopTraining(tf.keras.callbacks.Callback):
 callbacks = StopTraining()
 
 
+#function that returns the list of datapoints and labels to be added to the training set, along with the new unlabelled set
 def psuedolabel_new_data(x, threshold):
     new_x, new_y = [], []
     deleted_x = []
@@ -123,11 +126,13 @@ def psuedolabel_new_data(x, threshold):
     return new_x, new_y, deleted_x
 
 
+# number of cycles the model is trained over
 iters = 7
 
 train_accuracy = []
 test_accuracy = []
 
+# beginning training cycles
 hist = model.fit(X_train_labelled, y_train_labelled, epochs=5, batch_size=64, validation_data=(X_test, y_test),
                  callbacks=[callbacks])
 train_accuracy.extend(hist.history['acc'])
@@ -159,6 +164,7 @@ while len(new_x) > 0 and iters > 0:
         threshold += 0.1
     iters -= 1
 
+# plotting accuracies vs epochs
 print()
 print("Data plotted:")
 print(train_accuracy)
