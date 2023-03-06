@@ -21,17 +21,29 @@ Dataset: CIFAR-10
  
  HYPERPARAMETERS TUNED:
  1. Number of convulutional layers: {1,2}
+ 
  		Hyperparameters tuned for each convolutional layer:
+		
 		a. Kernel size: {2, 3, 4, 5, 6}
+		
 		b. Number of filters: {32, 64, 128, 256}
+		
 		c. Strides: {1, 2, 3, 4, 5}
+		
 		d. Activation function: {RELU, Sigmoid}
+		
  2. Number of maxpool layers: {1, 2}
+ 
  		a. Pool sizes: {1, 2, 3}
+		
  3. Number of dense layers: {1, 2}
+ 
  		a. Number of nodes: {256, 512, 1024}
+		
 		b. Activation function: {RELU, Sigmoid}
+		
  4. Number of epochs: {3, 4, 5, 6} (Test run 1); {3, 4, 5, 6, 7, 8} (Test run 2)
+
  5. Optimizer: {Adam, RMSProp, SGD}
 
 BASELINE MODEL:
