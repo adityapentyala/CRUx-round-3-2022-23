@@ -1,5 +1,5 @@
 """
-hyperparams: kernel size, layers, learning rate, activation function, epochs, filters, stride
+Written as task 2 of crux inductions round 3. Details of hyperparameters tuned given in task 2.md file
 """
 
 import tensorflow as tf
