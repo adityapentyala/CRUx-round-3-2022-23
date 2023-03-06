@@ -34,11 +34,15 @@ Dataset: CIFAR-10
 		
  2. Number of maxpool layers: {1, 2}
  
- 		a. Pool sizes: {1, 2, 3}
+ 		Hyperparameters tuned for each maxpool layer:
+		
+		a. Pool sizes: {1, 2, 3}
 		
  3. Number of dense layers: {1, 2}
  
- 		a. Number of nodes: {256, 512, 1024}
+ 		Hyperparameters tuned for each Dense/fully connected layer:
+		
+		a. Number of nodes: {256, 512, 1024}
 		
 		b. Activation function: {RELU, Sigmoid}
 		
