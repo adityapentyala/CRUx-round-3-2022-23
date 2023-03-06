@@ -19,6 +19,8 @@ Dataset: CIFAR-10
  generation. Final results of each test run compared with baseline model. All accuracies shown of test runs refer to
  testing accuracies.
  
+ Choices of hyperparameters are given beside each hyperparameter in the form of a set.
+ 
  HYPERPARAMETERS TUNED:
  1. Number of convolutional layers: {1,2}
  
