@@ -26,7 +26,7 @@ As an additional countermeasure against the common drawback of self learning, th
 -----------------------------------------------------------------------------------------------------------------------
 
 TEST RUN 1: Iterations = 7
-_NOTE: Excerpts of the output are given here. A complete copy of the console output is provided in the containing folder of this file._
+_NOTE: Excerpts of the output are given here. A complete copies of the console output are provided in the containing folder of this file._
 
 <img width="220" alt="image" src="https://user-images.githubusercontent.com/62715046/223140202-edc68aab-1b88-4839-a5b2-9bbcf5315127.png">
 
@@ -41,3 +41,19 @@ _Tuned hyperparameters and architecture of the model._
 _Training and testing accuracies over epochs. In this figure, an "Epoch" refers to a single training and psuedolabelling cycle._
 
 
+TEST RUN 2: Iterations = 15, Epochs (per training run) = 7
+
+<img width="323" alt="image" src="https://user-images.githubusercontent.com/62715046/223629406-c50ac5f2-ec11-4c61-82ee-b550ca9edb61.png">
+
+<img width="428" alt="image" src="https://user-images.githubusercontent.com/62715046/223629511-60f5e6df-50c8-4d8c-844d-4adb6bc9f206.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/62715046/223629551-b122b065-6f49-49b6-b4ec-3a9e3bb5dc27.png">
+
+_Tuned hyperparameters and architecture of the model._
+
+
+![Figure_2](https://user-images.githubusercontent.com/62715046/223629624-d9b85548-bc9f-453d-a96b-b3de61b6fd2d.png)
+
+_Training and testing accuracies over epochs. In this figure, an "Epoch" refers to each individual (completed) epoch of the 15 training runs._
+
+
+From the two graphs, we can see that while the training accuracy continued to improve steadily, the validation accuracy reached a plateau at about 20.5%.
