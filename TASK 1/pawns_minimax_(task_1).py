@@ -16,7 +16,6 @@ increasing size of board.
 
 import copy
 
-n = 5
 w = "W"
 b = "B"
 EMPTY = " "
@@ -297,17 +296,27 @@ def print_instructions():
 
 if __name__ == '__main__':
     print_instructions()
-    n = int(input("Enter size of board as N (for NxN sized board): "))
+    n = (input("Enter size of board as N (for NxN sized board): "))
+    while not n.isnumeric():
+        print("Please enter board size value as an integer within 3 and 13")
+        n = (input("Enter size of board as N (for NxN sized board): "))
+    while not (3 < int(n) <= 12):
+        print("Please enter board size value as an integer within 3 and 13")
+        n = (input("Enter size of board as N (for NxN sized board): "))
+    n = int(n)
     user = input("Would you like to play as white or black? (w/b): ").upper()
+    while user != w and user != b:
+        user = input("Would you like to play as white or black? (w/b): ").upper()
     gameover = False
     user_move = True
     ai = b
     DEPTH = (input("Enter max depth of game tree search (2-10, lower depth for higher size): "))
-    while not DEPTH.isnumeric() and not 1 <= int(DEPTH) <= 10:
+    while not DEPTH.isnumeric():
+        DEPTH = (input("Enter max depth of game tree search (2-10, lower depth for higher size): "))
+    while not 1 < int(DEPTH) <= 10:
+        print('Depth has to be an integer between 1 and 10')
         DEPTH = (input("Enter max depth of game tree search (2-10, lower depth for higher size): "))
     DEPTH = int(DEPTH)
-    while user != w and user != b:
-        user = input("Would you like to play as white or black? (w/b): ").upper()
     if user == w:
         user_move = True
         ai = b
